@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cg2ep770v3dlk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5dbue"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_dfcff"]
+
+[node name="platform" type="AnimatableBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1, 0.16)
+shape = SubResource("RectangleShape2D_5dbue")
+one_way_collision = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(20, 2.96)
+texture = SubResource("CanvasTexture_dfcff")
