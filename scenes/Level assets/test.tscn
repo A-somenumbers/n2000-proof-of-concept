@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyxl1am8rcbav"]
+
+[ext_resource type="PackedScene" uid="uid://cg2ep770v3dlk" path="res://scenes/Level assets/platform.tscn" id="1_pycdj"]
+[ext_resource type="PackedScene" uid="uid://b8iukodfxsbc7" path="res://scenes/player/player.tscn" id="2_dtqj4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="platform" parent="." instance=ExtResource("1_pycdj")]
+scale = Vector2(5.765, 5.765)
+
+[node name="Player" parent="." instance=ExtResource("2_dtqj4")]
+position = Vector2(0, -71)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
